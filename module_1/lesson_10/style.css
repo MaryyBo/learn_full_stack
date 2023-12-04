@@ -1,3 +1,10 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Ephesis&display=swap');
+
+  @font-face {
+    font-family: "Lora Italic";
+    src: url("./fonts/Lora-Italic-VariableFont_wght.ttf");
+  }
 .container{
     width: 80%;
     margin: 0 auto;
@@ -5,6 +12,7 @@
     background-color: #deaaaa;
     border: 1px solid #d20b0b;
     text-align: center;
+    
 }
 
 a{
@@ -15,6 +23,8 @@ a{
 
 .header-name {
     text-transform: uppercase;
+    font-family: 'Ephesis', cursive;
+    
     
   }
 
@@ -34,8 +44,8 @@ p {
     text-align:justify; /*по ширині*/
     /*text-align:center; по центру*/
     /*text-align:left;*/
-
-}
+    font-family: "Lora Italic";
+    
 
 .card-wrapper{
     border: 1px solid black;
