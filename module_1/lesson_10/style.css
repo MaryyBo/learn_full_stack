@@ -1,0 +1,82 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Ephesis&display=swap');
+
+  @font-face {
+    font-family: "Lora Italic";
+    src: url("./fonts/Lora-Italic-VariableFont_wght.ttf");
+  }
+.container{
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #deaaaa;
+    border: 1px solid #d20b0b;
+    text-align: center;
+    
+}
+
+a{
+    text-decoration: none;
+    color: black;
+    font-weight: 900;
+}
+
+.header-name {
+    text-transform: uppercase;
+    font-family: 'Ephesis', cursive;
+    
+    
+  }
+
+  .header-name {
+    
+  }
+.highlight{
+    color: rgb(34, 12, 12);
+    font-weight: bold;
+    font-style: italic;
+}
+
+
+p {
+    font-size: 30px;
+    line-height: 2em;
+    text-align:justify; /*по ширині*/
+    /*text-align:center; по центру*/
+    /*text-align:left;*/
+    font-family: "Lora Italic";
+    
+
+.card-wrapper{
+    border: 1px solid black;
+    width: 500px;
+    height: 350px;
+}
+
+.image{
+    display: block;
+    margin: 0 auto;
+
+    width: 300px;
+    border-radius: 50%;
+    height: 300px;
+    object-fit: cover;
+    
+
+    /*border: 3xp solid rgb(255, 0, 98);
+    box-sizing:border-box ;
+    padding: 10px; 
+    border: medium dashed green;*/
+}
+/*width = content + paddings + borders
+
+1.padding: top right bottom left
+2.padding: top left-right bottom
+3.padding: top-bottom left-right
+4.padding: all (top-right-bottom-left)
+*/
+
+/*div{
+    за замовчуванням дів блочний але це можна поміняти
+    display:inline;
+}*/
