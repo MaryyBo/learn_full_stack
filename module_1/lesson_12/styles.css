@@ -1,0 +1,22 @@
+table {
+    border: 2px solid black;
+    border-collapse: collapse;
+}
+
+td, th {
+
+    border: 1px solid black;
+}
+
+/*border-collaps - визначає як мають обєднатися границі комірок в таблиці
+border-collaps: separate;
+border-collaps: collapse;*/
+
+caption {
+    color: rgb(71, 20, 29);
+    font-weight: bold;
+}
+
+.text-center {
+text-align: center;
+}
