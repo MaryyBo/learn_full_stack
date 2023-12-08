@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <!-- 1.Зробити навігаційне меню тег <nav>
+        2.Список елементів (по горизонталі) List items
+        3. Випадаючий список sub-list
+    4.Випадаючий список 2 рівня sub-sub-list
+5.Випадаючий список 3 рівня sub-sub-sub-list-->
+
+
+<!-- 2.Список елементів (по горизонталі) List items -->
+<nav> 
+
+<ul class="nav-list">
+
+    <li class="list-item"><a href="#" class="link">Home</a></li>
+    <li class="list-item"><a href="#" class="link">WordPress+</a></li>
+
+    <li class="list-item"><a href="#" class="link">Web Design+</a>
+        <!-- 3. Випадаючий список sub-list  -->
+        <ul class="sub-nav-list">
+            <li class="sub-list-item"> <a href="#" class="link ">Resourses</a></li>
+            <li class="sub-list-item"> <a href="#" class="link ">Links</a></li>
+
+            <li class="sub-sub-nav-list"> 
+                <a href="#" class="link ">Tutorials+</a>
+            <ul>
+                <li class="sub-sub-list-item"> <a href="#" class="link ">HTML/CSS</a></li>
+                <li class="sub-sub-list-item"> <a href="#" class="link ">jQuery</a></li>
+                <li class="sub-sub-list-item">
+                     <a href="#" class="link ">Other+</a>
+                     <ul class="sub-sub-sub-nav-list">
+                        <li class="sub-sub-sub-list-item" > <a href="#" class="link ">Stuf</a></li>
+                        <li class="sub-sub-sub-list-item" > <a href="#" class="link ">Things</a></li>
+                        <li class="sub-sub-sub-list-item" > <a href="#" class="link "></a>Other Stuff</li>
+
+                     </ul>
+                    </li>
+            </ul>
+            </li>
+
+        </ul>
+    </li>
+
+    <li class="list-item"><a href="#" class="link">Graphic disign</a></li>
+    <li class="list-item"><a href="#" class="link">Inspiration</a></li>
+    <li class="list-item"><a href="#" class="link">Contact</a></li>
+    <li class="list-item"><a href="#" class="link">About</a></li>
+
+</ul>
+</nav>
+
+<main>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe odio eos reprehenderit odit obcaecati. Cum officiis magni minima sint consequuntur impedit nulla saepe, eligendi aspernatur voluptas deleniti laudantium facilis beatae ex natus maiores temporibus quos obcaecati, aut, odio neque odit quis! Vitae, dolorum ex minima quasi facere eveniet illum necessitatibus beatae vero, consequuntur aperiam atque. Ea quos nostrum optio! Veritatis, eius? Aut repellendus culpa eius minima cumque dolorum. Perspiciatis, mollitia! Omnis ipsum fugiat minima sequi sed praesentium repellendus dignissimos ad provident sunt aspernatur ab nulla atque amet asperiores, explicabo molestias eum quibusdam vitae quis officiis! Minus, ullam. Ea, obcaecati ipsa?
+    </p>
+</main>
+
+</body>
+
+<!-- в браузері є  свої встроєні стилі (базові), так і тут можна помітити, що 
+браузер "подарува нам відступи які нам не потрібні треба відключити margin and padding в стилях"
+Cсписки які відкриваються там буде АБСОЛЮТНЕ позиціонування. Відбуватися воно буде відностно не статично позиціонованого. Ми маємо якось НЕ статично позиціонувати наш основний горизонтальній список, але не через ul а через  li 
+
+Щоб прибрати прбіли між елементами списку li 
+Перенос строки кодується одним символом, 1 байт- 1 перенос.
+Внутри nav-list, размер символів внутри nav-list- 0 -->
+
+</html>
