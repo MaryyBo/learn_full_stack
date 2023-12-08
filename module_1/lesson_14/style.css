@@ -1,11 +1,50 @@
 p{
     color: blue;
+    font-size: 20px;
+    border: 1px solid black;
+    position: relative;
+
 }
 
-/* псевдоелемент selections - приміняє стилі до частини документу який був виділеним користувачем за допомогою миші*/
+/* псевдоелемет before/after (має властивість - content)ми можем щось приклеїти перед елементом
+cердечко наче окремий елемент на рівні з параграфом, воно є псевдоелементом що просто знаходиться ПОРЯД, в версті це сердечко не буде видно!
+ використовуються у випадках, коли треба надати якийсь чисто декоративний елемент
+ те, що потрібно вставити буде запихнуте у властивість "content"
 
-p::selection{
-    background-color: rgb(195, 127, 255);
-    color: rgb(226, 186, 43);
+ Opacity -щоб встановити НЕпрозрачність
+
+ List of Unicode symbols - cайт1, що містить ОСОБЛИВІ символи
+ old.unicoud-table synbols (сайт2)
+ */
+
+ 
+p::before{
+
+    text-align: center;
+    border-radius: 50%;
+    position: absolute;
+    top:5px;
+    left:10px;
+    color: red;
+    background-color: pink;
+    width: 20px;
+    height: 20px;
+    content: '❤ ';
+    display: inline-block;
+    opacity: 0.5;
 }
 
+p::after{
+    text-align: center;
+    border-radius: 50%;
+    position: absolute;
+    bottom:5px;
+    right:10px;
+    color: red;
+    background-color: pink;
+    width: 20px;
+    height: 20px;
+    content: '❤ ';
+    display: inline-block;
+    opacity: 0.5;
+}
