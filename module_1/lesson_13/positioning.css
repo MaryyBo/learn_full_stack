@@ -1,0 +1,31 @@
+
+
+.container{
+    background-color:lightcoral;
+    height: 900px;
+    width: 100%;
+    margin: 0 auto;
+
+}
+
+/* .wrapper {
+    background-color: dodgerblue;
+    width: 80%;
+    height: 800px;
+
+} */
+
+.pop-up{
+    position: fixed;
+    bottom:40%;
+    right: 40%;;
+    width: 400px;
+    height:100px;
+    background-color:rgb(138, 138, 204);
+    border: 1px solid black;
+}
+
+ .text {
+    text-align: center;
+    font-size: 20px;
+} 

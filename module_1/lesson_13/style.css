@@ -1,0 +1,70 @@
+/* li:first-child {
+    color: blue;
+}
+li:last-child {
+    color: green;
+} */
+
+/* li:nth-child(odd){
+    color: orange;
+    background-color: bisque;
+}
+
+li:nth-child(even){
+    color: orangered;
+    background-color: bisque;
+} */
+
+/* li:nth-child(5){
+    color: green;
+    background-color: bisque;
+} */
+
+/* Задача:потрібно обрати всі елементи списку після 3го */
+
+
+ /* li:nth-child(n+4) {
+    color: green;
+    background-color: bisque;
+ } */
+
+  /* Задача:потрібно обрати перші 5 елементів списку
+
+li:nth-child(-n+5) {
+    color: green;
+    background-color: bisque;
+    
+} */
+
+/* Задача:потрібно вибрати кожен 3 елемент починаючи з 1
+A - які саме числа нас будуть цікавити 
+B - елемент , з якого починаємо */
+
+/* li:nth-child(3n+1) {
+    color: green;
+    background-color: bisque;
+} */
+
+div {
+    width: 100px;
+    height: 100px;
+    border: 2px solid black;
+
+}
+
+/* Червоний 1, 5, 7
+Зелений 2, 4, 8
+Синій 3, 6 (для кожного 3 елемента) */
+
+div:nth-child(odd) {
+    background-color: red;
+}
+
+div:nth-child(even) {
+    background-color: green;
+}
+
+div:nth-child(3n+3) {
+    background-color: blue;
+}
+
