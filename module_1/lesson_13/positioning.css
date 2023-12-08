@@ -1,60 +1,33 @@
-    
-.container{
-    background-color: lime;
-    height: 800px;
-    width: 80%;
-    /*  процент буде рахуватися від БАТЬКА(в даному випадку, від body,від екрану, 80%екрану)*/
-    margin: 0 auto;
-
-}
-
-.wrapper {
-    background-color: dodgerblue;
-    width: 80%;
-    height: 800px;
-
-}
-
-.inner{
-    text-align: center;
-    font-size: 40px;
-    width: 80px; */
-    height: 80px;
-    background-color:forestgreen;
-    border: 1px solid black;
-    /* прибираємо у квадратиків розміри по висоті/ширині, таким чином висота/ширина
-    підлаштовується під контент */
-}
-
-.div1 {
-    
-
-}
-
-.div2 {
-    position: relative;
-    top: 10px;
-    left: 20px;
 
 
-}
-/* 3 квадратик залишиться на екрані при прокручуванні, через значення  fixed
-регулювати позицію на екрані можна через властивості top,bottom,left,right */
-.div3 {
+.box{
     position: fixed;
-    top: 0;
-    /* bottom:0; */
-    /*вказуючи top-0 та bottom -0  ми робимо так, що квадратик розтягується на всю ширину зверху вниз, на всю вистоу viewportА
-    fixed - це про позиціонування відносно viewportА */
-    /* right: 0; */
-    /* left: 0; */
-
-    /* Relative (Відносне) позиціонування - це коли елемент позиціонується відносно свого місця в нормальному потоці документа
-       Fixed (Фіксоване)- це коли елемент ВИРИВАЄТЬСЯ з потоку, ми позиціонуємось відносно viewportА, елемент ЗАВЖДИ в нашому полі зору
-       За допомогою top,bottom,left,right ми можемо двигати наші квадратики*/
-
+    font-size: 40px;
+    width: 100px;
+    height: 100px;
+    
 }
 
-.div4 {
+.box1 {
+    background-color: blue;
+    top:0;
+    left:0;
+}
 
+.box2 {
+    background-color: blueviolet;
+    top:0;
+    right:0;
+}
+
+.box3 {
+    background-color: yellow;
+    bottom:0;
+    left:0;
+}
+
+.box4 {
+    background-color: green;
+    bottom:0;
+    right:0;
 }
