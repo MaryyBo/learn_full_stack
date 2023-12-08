@@ -2,7 +2,10 @@ p{
     color: blue;
 }
 
-p::first-line{
-    background-color: aquamarine;
-    color: blueviolet;
+/* псевдоелемент selections - приміняє стилі до частини документу який був виділеним користувачем за допомогою миші*/
+
+p::selection{
+    background-color: rgb(195, 127, 255);
+    color: rgb(226, 186, 43);
 }
+
