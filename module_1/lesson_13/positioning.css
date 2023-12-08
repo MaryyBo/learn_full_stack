@@ -1,33 +1,60 @@
 
 
-.box{
-    position: fixed;
+/* absolut (абсолютне) позиціонування - використовується коли у нас є якийсь розкриваючийся список, навігаційний
+position: absolute
+коли ми позиціонуємось відносно найближчого нестатично позиціонованого родича.
+Елемент виривається з потоку. Інші елементи будуть себе вести так, наче абсолютно позиціонованого елемента і немає.
+*/
+
+.container{
+    background-color: lime;
+    height: 800px;
+    width: 80%;
+    margin: 0 auto;
+
+}
+
+.wrapper {
+    background-color: dodgerblue;
+    width: 80%;
+    height: 800px;
+
+}
+
+.inner{
+    text-align: center;
     font-size: 40px;
-    width: 100px;
-    height: 100px;
+    width: 80px;
+    height: 80px;
+    background-color:forestgreen;
+    border: 1px solid black;
+   
+}
+ /* absolute - позиціонується відносно <body> */
+.div1 {
+    position:absolute;
+    top: 200px;
+
+
+}
+
+.div2 {
+    position: relative;
+    top: 10px;
+    left: 20px;
+
+
+}
+
+.div3 {
+    position: fixed;
+    top: 50%;
+    /* bottom:0; */
+    /* right: 0; */
+    /* left: 0; */
+
+}
+
+.div4 {
     
-}
-
-.box1 {
-    background-color: blue;
-    top:0;
-    left:0;
-}
-
-.box2 {
-    background-color: blueviolet;
-    top:0;
-    right:0;
-}
-
-.box3 {
-    background-color: yellow;
-    bottom:0;
-    left:0;
-}
-
-.box4 {
-    background-color: green;
-    bottom:0;
-    right:0;
 }
