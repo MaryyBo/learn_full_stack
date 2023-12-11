@@ -23,10 +23,11 @@
     border: 1px solid black;
     display: flex;
     flex-direction: row;
-    align-items: flex-start;
-    justify-content: flex-start;
-    flex-wrap:wrap;
-    /* height: 150px; */
+    align-items: ;
+    align-content: center;
+    justify-content: space-between;
+    flex-wrap:wrap-reverse;
+    height: 500px;
 }
 
  /* FLEX - це завжди про напрямок
@@ -48,8 +49,14 @@
     
     FLEX-WRAP - дозволяє контент який не влазить ПЕРЕНЕСТИ
     flex-wrap:nowrap
-    flex-wrap:wrap - переносити на наст строку
+    flex-wrap:wrap - переносити на наст рядок
     flex-wrap:wrap - reverse;
+
+    Align-content - вирівнює рядки за побічною віссю
+
+    Flex-flow - приймає 2 значення
+    -направлення осі - direction
+    -flex-wrap
     */
 .item{
     width: 50px;
@@ -65,4 +72,6 @@ align-items - вирівнює контект в перпендикулярно�
 center - всі елементи по центру осі
 flex-end - всі елементи в кінець
 flex-start - всі елем на початок осі 
-stretch - висота розтягується по вертикалі*/
+stretch - висота розтягується по вертикалі
+
+*/
