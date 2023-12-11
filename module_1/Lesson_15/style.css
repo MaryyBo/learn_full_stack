@@ -1,77 +1,53 @@
-/* * - множинний селектор (в залеж від того як ви його викор він має дек значень
-уявімо що у нас є <div> (це може бути будь-який тег, клас , id, і т.д ) - то правило працює на всі divи з html  а якщо з * то тоді стилі 
-застосовуються не для div, а для всіх ДОЧІРНІХ (вкладених в дів) елементів)
-
-більш поширений варіант використання:
-може вик в констексті універс селектору "*":
-
-* {} - застосовує до всіх-всіх елементів якесь правило
-
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box; 
+    box-sizing: border-box;
 }
 
-Проблема: різні базові стилі , які можуть давати браузери
-1 рішення - універс селектор з базовими правилами
-2 рішення - reset.css - щоб скинути всі браузерні стилі
-3 рішення - normalize.css (приводить всі стилі для всіх браузерів до чогось спільного)*/
-
-.container{
-    /* для батьківського контейнера дається display: flex; */
+.card-container {
+    width: 35vw;
+    height: 60vh;
     border: 1px solid black;
+}
+/* Для задавання розміру елементам
+   vw - 1vw= 1% ширини вьюпорта
+   vh - 1vh= 1% висоти вьюпорта*/
+
+   .header {
+    height: 50%;
+    width: 100%;
+    background-image: url('./pictures/ladybug_finger_GettyImages-184134586_600_400_80.jpg');
+    background-size: cover;
+   }
+
+   /* 50% height від батька */
+
+   .card{
+    font-size: 16px;
+    font-weight: 600;
+    display: flex;
+    height: 50%;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+   }
+
+   .user-img{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin-top: 20%;
+
+   }
+
+   h2, h3{
+    color: black;
+
+   }
+
+   .links{
     display: flex;
     flex-direction: row;
-    align-items: ;
-    align-content: center;
-    justify-content: space-between;
-    flex-wrap:wrap-reverse;
-    height: 500px;
-}
-
- /* FLEX - це завжди про напрямок
- Cпрямування осей координат
-    flex-direction:
-    row: main- зліва направо
-    row-reverse: зправа на ліво 
-    column: - головна вісь дивиться зверху вниз 
-    сolumn-reverse: main знизу вверх
+    width: 80%;
+    justify-content: space-around;
+    margin-bottom: 15px;
     
-    FLEX - container
-    justify-container вирівнювання по головній осі растягивает наш контент,например по центру justify-content: center;
-    justify-content: flex-end; всі елементи в кінець
-    justify-content: flex-start; всі елементи на початок осі
-    justify-content: space-around; одинарний простір на початку і в кінці і подвійний між останніми
-    justify-content: space-between; на початку і вкінці простору немає, а між елементами рівномірно розподілений
-    justify-content: space-evenly; рівномірно розподілений простір між елементами
-    
-    
-    FLEX-WRAP - дозволяє контент який не влазить ПЕРЕНЕСТИ
-    flex-wrap:nowrap
-    flex-wrap:wrap - переносити на наст рядок
-    flex-wrap:wrap - reverse;
-
-    Align-content - вирівнює рядки за побічною віссю
-
-    Flex-flow - приймає 2 значення
-    -направлення осі - direction
-    -flex-wrap
-    */
-.item{
-    width: 50px;
-    /* height: 50px; */
-    background-color: teal;
-    color: white;
-    text-align: center;
-    border: 2px solid red;
-}
-
-/* Aline-iteems: для вирівнювання ВЕРТИКАЛЬНО за побічною віссю 'across axіs'
-align-items - вирівнює контект в перпендикулярному напрямку, працює з побічною віссю
-center - всі елементи по центру осі
-flex-end - всі елементи в кінець
-flex-start - всі елем на початок осі 
-stretch - висота розтягується по вертикалі
-
-*/
+   }
