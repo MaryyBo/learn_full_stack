@@ -17,3 +17,35 @@
 1 рішення - універс селектор з базовими правилами
 2 рішення - reset.css - щоб скинути всі браузерні стилі
 3 рішення - normalize.css (приводить всі стилі для всіх браузерів до чогось спільного)*/
+
+.container{
+    /* для батьківського контейнера дається display: flex; */
+    border: 1px solid black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+ /* FLEX - це завжди про напрямок
+ Cпрямування осей координат
+    flex-direction:
+    row: main- зліва направо
+    row-reverse: зправа на ліво 
+    column: - головна вісь дивиться зверху вниз 
+    сolumn-reverse: main знизу вверх
+    
+    FLEX - container
+    justify-container вирівнювання по головній осі растягивает наш контент,например по центру justify-content: center;
+    justify-content: flex-end; всі елементи в кінець
+    justify-content: flex-start; всі елементи на початок осі
+    justify-content: space-around; одинарний простір на початку і в кінці і подвійний між останніми
+    justify-content: space-between; на початку і вкінці простору немає, а між елементами рівномірно розподілений
+    justify-content: space-evenly; рівномірно розподілений простір між елементами
+    */
+.item{
+    width: 50px;
+    height: 50px;
+    background-color: teal;
+    color: white;
+    text-align: center;
+    border: 2px solid red;
+}
