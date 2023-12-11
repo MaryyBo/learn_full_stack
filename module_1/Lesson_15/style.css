@@ -22,8 +22,10 @@
     /* для батьківського контейнера дається display: flex; */
     border: 1px solid black;
     display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
+    flex-direction: row-reverse;
+    align-items: flex-end;
+    justify-content: flex-end;
+    height: 150px;
 }
  /* FLEX - це завжди про напрямок
  Cпрямування осей координат
@@ -43,9 +45,16 @@
     */
 .item{
     width: 50px;
-    height: 50px;
+    /* height: 50px; */
     background-color: teal;
     color: white;
     text-align: center;
     border: 2px solid red;
 }
+
+/* Aline-iteems: для вирівнювання ВЕРТИКАЛЬНО за побічною віссю 'across axіs'
+align-items - вирівнює контект в перпендикулярному напрямку, працює з побічною віссю
+center - всі елементи по центру осі
+flex-end - всі елементи в кінець
+flex-start - всі елем на початок осі 
+stretch - висота розтягується по вертикалі*/
