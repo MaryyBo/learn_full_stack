@@ -1,108 +1,38 @@
-.nav-list {
+.nav-list{
     margin: 0;
     padding: 0;
-    /* щоб прибрати відступи (браузерні) між списками, ми можемо вказати що розмір
-    символу в середині nav-list розмір шрифту - 0 */
-    font-size: 0;
-
-
+    font-size: 0; 
 
 }
-/* клас list-item xарактеризує наші <li> списки .
-щоб поставити список в ряд, треба використати властивість display:inline block
- для того, щоб була можливість задавати ширину та висоту*/
+    
+
 .list-item{
     position: relative;
     display:inline-block;
     padding: 20px;
-    background-color: rgb(248, 106, 54);
-
+    background: rgb(2, 122, 84);
 }
-
-/* в списках , які випадають, як раз і буде АБСОЛЮТНЕ позиціонування,
- і воно має відбуватися відносно НАЙБЛИЖЧОГО нестатично позиціонованого родича
- Таким чином ми маємо зараз НЕСТАТИЧНО позиціонувати наш загальний горизонтальний список,
- САМІ елементи списку (з классом list-item, а не nav menu), від якого будуть йти випадаючі списки.
- Тепер треба встановити .list-item position:relative, це ні на що невпливає, але тепер всі випадаючі 
- списки вони будуть позиціонуватися відносно того елемента , на який навели.
-*/
 
 .link{
     color: white;
-    text-decoration: none; 
     font-size: 20px;
-
-/*  text-decoration: none; - щоб прибрати лініЇ підчеркування */
+    text-decoration: none;
 }
 
 .sub-nav-list{
-    /* Щоб спозиціонувати випадаючий список САМЕ від блоку "Web Design" нам
-    треба встановити властивість position: absolute; */
     position: absolute;
-    /* top: 40px; */
-    display: block;
-    width: 140px;
-    left: -32px;
+    display:block;
+    width:120px;
+    left: -30px;
+    top: 63px;
+   
+
+
 }
 
 .sub-list-item{
-/* Для того, щоб випадаючого списку НЕ було видно треба задати йому 
-властивість  display: none;*/
-    display: none;
-    background-color: rgb(248, 106, 54);
-    padding: 20px;
+    /* display: none; */
+    background-color: rgb(2, 122, 84);
+    padding: 15px;
 
-}
-
-.list-item:hover .sub-list-item {
-    /*Таким записом .list-item:hover .sub-list-item ми показуємо що при наведенні на конкретний item
-    в нашому випадку він називається "Web design+" випадає інший список зі своіми items (в нашому 
-    випадку він під класом .sub-list-item) і при наведенні на основний список , буде випадати випадаючий список
-    і ми маємо йому задати відображення як display: block; */
-    display: block;
-
-}
-
-.sub-sub-nav-list{
-    position: absolute;
-    display: block;
-    top: 127px;
-    width: 140px;
-    left: 140px;
-
-}
-
-.sub-sub-list-item{
-    display: none;
-    background-color: rgb(248, 106, 54);
-    padding: 20px;
-
-}
-
-.sub-list-item:hover .sub-sub-list-item{
-    display: block;
-}
-
-.sub-sub-sub-nav-list{
-    position: absolute;
-    display: block;
-    top: 127px;
-    width: 140px;
-    left: 140px;
-}
-
-.sub-sub-sub-list-item{
-    display: none;
-    background-color: rgb(248, 106, 54);
-    padding: 20px;
-}
-
-.sub-sub-list-item:hover .sub-sub-sub-list-item {
-    display: block;
-}
-
-/* Коли ми хаверимся на якийсь  */
-
-.sub-list-item:hover, .sub-sub-list-item:hover, .sub-sub-sub-list-item:hover{
-    background-color:rgb(125, 44, 14) ;
 }
