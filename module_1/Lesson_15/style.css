@@ -22,11 +22,13 @@
     /* для батьківського контейнера дається display: flex; */
     border: 1px solid black;
     display: flex;
-    flex-direction: row-reverse;
-    align-items: flex-end;
-    justify-content: flex-end;
-    height: 150px;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-wrap:wrap;
+    /* height: 150px; */
 }
+
  /* FLEX - це завжди про напрямок
  Cпрямування осей координат
     flex-direction:
@@ -42,6 +44,12 @@
     justify-content: space-around; одинарний простір на початку і в кінці і подвійний між останніми
     justify-content: space-between; на початку і вкінці простору немає, а між елементами рівномірно розподілений
     justify-content: space-evenly; рівномірно розподілений простір між елементами
+    
+    
+    FLEX-WRAP - дозволяє контент який не влазить ПЕРЕНЕСТИ
+    flex-wrap:nowrap
+    flex-wrap:wrap - переносити на наст строку
+    flex-wrap:wrap - reverse;
     */
 .item{
     width: 50px;
