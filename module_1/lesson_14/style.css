@@ -1,50 +1,28 @@
 p{
     color: blue;
     font-size: 20px;
-    border: 1px solid black;
     position: relative;
 
 }
-
-/* псевдоелемет before/after (має властивість - content)ми можем щось приклеїти перед елементом
-cердечко наче окремий елемент на рівні з параграфом, воно є псевдоелементом що просто знаходиться ПОРЯД, в версті це сердечко не буде видно!
- використовуються у випадках, коли треба надати якийсь чисто декоративний елемент
- те, що потрібно вставити буде запихнуте у властивість "content"
-
- Opacity -щоб встановити НЕпрозрачність
-
- List of Unicode symbols - cайт1, що містить ОСОБЛИВІ символи
- old.unicoud-table synbols (сайт2)
- */
-
  
-p::before{
+p::first-line{
+    line-height: 30px;
+    background-color:rgb(157, 66, 242);
+   
+}
 
-    text-align: center;
-    border-radius: 50%;
-    position: absolute;
-    top:5px;
-    left:10px;
-    color: red;
-    background-color: pink;
+p::before{
     width: 20px;
     height: 20px;
-    content: '❤ ';
+    content: '❟';
     display: inline-block;
-    opacity: 0.5;
+    
 }
 
 p::after{
-    text-align: center;
-    border-radius: 50%;
-    position: absolute;
-    bottom:5px;
-    right:10px;
-    color: red;
-    background-color: pink;
     width: 20px;
     height: 20px;
-    content: '❤ ';
+    content: '❟';
     display: inline-block;
-    opacity: 0.5;
+  
 }
