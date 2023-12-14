@@ -9,23 +9,24 @@
 <body>
     <form>
         <label>
+            <!-- атрибут required прописується там де НЕОБХІДНО ввести дані, без них не пройти далі -->
            Iм'я 
            <input type="text" name="username" placeholder="Вадим" autofocus > 
         </label>
 
-        <label>
+        <label class="required">
             Електронна пошта
-            <input type="email" name="email" placeholder="example@email.com " pattern="[^@ \t\r\n]+@[^@ \t\r\n]+\.[^@ \t\r\n]+">
+            <input required type="email" name="email" placeholder="example@email.com " pattern="[^@ \t\r\n]+@[^@ \t\r\n]+\.[^@ \t\r\n]+">
         </label>
 
-        <label>
+        <label class="required">
             Пароль
-            <input type="password" name="password" placeholder="qwerty1234" pattern="/(?=.*[0-9])(?=.*[!@#$%^&*])(?=.*[a-z])(?=.*[A-Z])[0-9a-zA-Z!@#$%^&*]{6,}/g">
+            <input  type="password" name="password" placeholder="qwerty1234" pattern="/(?=.*[0-9])(?=.*[!@#$%^&*])(?=.*[a-z])(?=.*[A-Z])[0-9a-zA-Z!@#$%^&*]{6,}/g">
         </label>
 
         <label>
             Телефон
-            <input type="text" name="phone" placeholder="0994536287">
+            <input  type="text" name="phone" placeholder="0994536287">
         </label>
 
         <label>
@@ -34,8 +35,69 @@
         </label>
         <label>
             Дата народження 
-            <input type="text" name="birthdate" placeholder="15">
+            <input type="date" name="birthdate" placeholder="15">
         </label>
+<!-- коли потірбен один з варіантів відповідей використ радіокнопки
+     type="radio" з значенням value 
+    - Щоб можно було обрати лише один гендер, потрібно всіх іх додати в одну групу
+    name="gender
+    - Щоб за замовчуванням завжди стояло male ставлять значення checked
+    - якщо треба погодитись з політикою сайту input type="checkbox""
+-->
+
+<fieldset>
+    <legend>Choose your gender</legend>
+    <label>
+        <input type="radio" value="Male" name="gender" checked>
+        Male
+     </label>
+     <label>
+        <input type="radio" value="Female" name="gender">
+        Female
+     </label>
+     <label>
+        <input type="radio" value="Nonbinary" name="gender">
+       Nonbinary
+     </label>
+</fieldset>
+
+<!-- щоб обрати не 1 а одразу декілька файлів = multiple -->
+<fieldset>
+    <legend>Choose your avatar</legend>
+        <input type="file" multiple name="avatars">
+</fieldset>
+
+<!-- Select - для списку що розкривається, його елементи це - option
+назва міста це те зо бачить користувач, а value те що відправиться на сервер
+-Щоб згрупувати option що знаходяться всередині = optgroup  
+- Якщо немає в списку якогось міста то можна використати datalist-->
+
+
+<fieldset>
+    <legend>Choose your city</legend>
+        <select name="City">
+            <option value="Київ">Київ</option>
+            <option value="Одеса">Одеса</option>
+            <option value="Чернівці">Чернівці</option>
+
+            <optgroup label="Дніпрoпетровська область">
+                <option value="Dnipro">Дніпро</option>
+                <option value="Kryvyy Rih">Кривий ріг</option>
+            </optgroup>
+            
+        </select>
+</fieldset>
+        
+
+         <label>
+            <input type="checkbox" name="is-agree" checked>
+            Чи погоджуєтесь Ви із нашою політикою?
+         </label>
+         <label>
+            <input required type="checkbox" name="is-subscribed" checked>
+            Чи хочете ви отримувати від нас новини? 
+         </label>
+
 
         <button type="submit">Зареєструватися</button>
         <button type="reset">Очистити</button>
