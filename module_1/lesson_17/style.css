@@ -1,0 +1,17 @@
+form{
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+    margin: 0 auto;
+    /*Щоб виставити посередині, треба виставити margin 0 auto?  */
+
+}
+/* щоб встали один під одним */
+label, input{
+    display: block;
+}
+
+input, button{
+    padding: 10px 20px;
+    font-size: 16px;
+}
