@@ -15,12 +15,12 @@
 
         <label>
             Електронна пошта
-            <input type="email" name="email" placeholder="example@email.com">
+            <input type="email" name="email" placeholder="example@email.com " pattern="[^@ \t\r\n]+@[^@ \t\r\n]+\.[^@ \t\r\n]+">
         </label>
 
         <label>
             Пароль
-            <input type="password" name="password" placeholder="qwerty1234">
+            <input type="password" name="password" placeholder="qwerty1234" pattern="/(?=.*[0-9])(?=.*[!@#$%^&*])(?=.*[a-z])(?=.*[A-Z])[0-9a-zA-Z!@#$%^&*]{6,}/g">
         </label>
 
         <label>
