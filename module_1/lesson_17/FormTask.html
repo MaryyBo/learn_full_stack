@@ -9,19 +9,22 @@
   <body>
     <form>
       <h1>Форма зворотнього зв'язку</h1>
-      <fieldset>
+      <fieldset class="center">
         <legend>Особисті дані</legend>
         <label>
+            Ім'я
           <input type="text" name="name" />
-          Ім'я
+          
         </label>
         <label>
+            Електронна пошта
           <input type="text" name="email" />
-          Електронна пошта
+          
         </label>
         <label>
+            Дата народження
           <input type="date" name="birthdate" />
-          Дата народження
+          
         </label>
       </fieldset>
 
@@ -66,25 +69,25 @@
       <fieldset>
         <legend>Choose your gender</legend>
         <label>
-          <input type="radio" value="Male" name="gender" />
+          <input type="radio" value="Male" name="search-system" />
           Пошукові системи
         </label>
         <label>
-          <input type="radio" value="Female" name="gender" />
+          <input type="radio" value="Female" name="social-networks" />
           Соціальні мережі
         </label>
         <label>
-          <input type="radio" value="Nonbinary" name="gender" />
+          <input type="radio" value="Nonbinary" name="friends" />
           Поради друзів/знайомих
         </label>
       </fieldset>
 
       <fieldset>
         <legend>Опишіть свої враження/скарги/пропозиції</legend>
-        <textarea placeholder=""> </textarea>
+        <textarea> </textarea>
       </fieldset>
 
-      <button class="button">Надіслати форму</button>
+      <button>Надіслати форму</button>
     </form>
   </body>
 </html>
