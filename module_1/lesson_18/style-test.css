@@ -1,0 +1,27 @@
+
+/* Зазвичай зберігається в загальному "*" */
+/* *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} */
+
+:root{
+    font-size: 16px;
+}
+
+ul{
+    font-size: 0;
+    font-size: 24px;
+}
+/* rem - щоб вказати що відмірюватись font-size буде від :root, а не від батьківскього
+як це відбувається з -em
+1 em - це один від батьківського шрифту
+1 rem - це один розмір шрифту root елемента*/
+
+li{
+    display: inline-block;
+    padding: 10px;
+    background-color: blueviolet;
+    font-size: 2rem;
+}
