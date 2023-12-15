@@ -6,18 +6,92 @@
     <title>Document</title>
     <link rel="stylesheet" href="./formspractice.css" />
 </head>
-<!-- Реглярний вираз -  це шаблон або правило для пошуку та відповідності текстовим рядкам (входження у тексті)
-Наприклад у нас є 4 слова: (треба порахувати скільки разів зустріч частина /міс/ у всіх словах(словнику))
-Міський    <<---- входження
-Приміський  <<---- входження
-Міст   <<---- входження
-Розмістити   <<---- входження
-Панацея - слово без частини /міс/ і в цьому слові не буде знайдено входження 
-
-Ідея: допомогою регулярок ми можемо шукати входження у тексті
-pattern="" 
-можно загуглити, регулярний вираз для перевірки email, або на сайті Ihaterejegex -->
 <body>
+
+    <form>
+        <h1>Форма зворотнього зв'язку</h1>
+        <fieldset>
+            <legend>Особисті дані</legend>
+            <label>
+                <input type="text" name="name" >
+                Ім'я
+             </label>
+             <label>
+                <input type="text" name="email" >
+                Електронна пошта
+             </label>
+             <label>
+                <input type="date" name="birthdate" >
+               Дата народження
+             </label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Стать</legend>
+            <label>
+                <input type="radio" value="Male" name="gender">
+                Чоловік
+             </label>
+             <label>
+                <input type="radio" value="Female" name="gender">
+                Жінка
+             </label>
+             <label>
+                <input type="radio" value="Nonbinary" name="gender">
+               Інше
+             </label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Додаткові налаштування</legend>
+            <label>
+                <input type="checkbox" name="is-subscribed" >
+                Підписатися на розсилку
+             </label>
+        </fieldset>
+
+        <fieldset>
+            <legend> Оберіть категорію своїх інтересів</legend>
+            <select name="interests">
+                <optgroup label="Технології">
+                  <option value="Programming">Програмування</option>
+                  <option value="Net">Мережа</option>
+                </optgroup>
+                <optgroup label="Музика">
+                    <option value="Rock">Рок</option>
+                    <option value="Pop">Поп</option>
+                  </optgroup>
+              </select>
+        </fieldset>
+
+        <fieldset>
+            <legend>Choose your gender</legend>
+            <label>
+                <input type="radio" value="Male" name="gender" >
+               Пошукові системи
+             </label>
+             <label>
+                <input type="radio" value="Female" name="gender">
+                Соціальні мережі
+             </label>
+             <label>
+                <input type="radio" value="Nonbinary" name="gender">
+               Поради друзів/знайомих
+             </label>
+        </fieldset>
+
+        <fieldset>
+            <legend> Опишіть свої враження/скарги/пропозиції</legend>
+            <textarea placeholder="" >
+   
+            </textarea>
+        </fieldset>
+
+        <button class="button">Надіслати форму</button>
+
+
+       
+    </form>
     
 </body>
 </html>

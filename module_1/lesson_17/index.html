@@ -7,6 +7,18 @@
     <link rel="stylesheet" href="./style.css" />
 </head>
 <body>
+
+    <!-- Реглярний вираз -  це шаблон або правило для пошуку та відповідності текстовим рядкам (входження у тексті)
+Наприклад у нас є 4 слова: (треба порахувати скільки разів зустріч частина /міс/ у всіх словах(словнику))
+Міський    <<---- входження
+Приміський  <<---- входження
+Міст   <<---- входження
+Розмістити   <<---- входження
+Панацея - слово без частини /міс/ і в цьому слові не буде знайдено входження 
+
+Ідея: допомогою регулярок ми можемо шукати входження у тексті
+pattern="" 
+можно загуглити, регулярний вираз для перевірки email, або на сайті Ihaterejegex -->
     <form>
         <label>
             <!-- атрибут required прописується там де НЕОБХІДНО ввести дані, без них не пройти далі -->
@@ -75,19 +87,21 @@
 
 <fieldset>
     <legend>Choose your city</legend>
-        <select name="City">
-            <option value="Київ">Київ</option>
-            <option value="Одеса">Одеса</option>
-            <option value="Чернівці">Чернівці</option>
-
-            <optgroup label="Дніпрoпетровська область">
-                <option value="Dnipro">Дніпро</option>
-                <option value="Kryvyy Rih">Кривий ріг</option>
-            </optgroup>
-            
-        </select>
-</fieldset>
         
+        <datalist id="city-list">
+            <option value="Kyiv"></option>
+            <option value="Odesa"></option>
+            <option value="Chernivtci"></option>
+            <option value="Dnipro"></option>
+            <option value="Kryvyy Rih"></option>
+        </datalist>
+          
+</fieldset>
+      
+<!-- Поле для вводу великої кількості тексту -->
+<textarea placeholder="" >
+   
+</textarea>
 
          <label>
             <input type="checkbox" name="is-agree" checked>
