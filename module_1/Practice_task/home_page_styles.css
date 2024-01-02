@@ -1,0 +1,58 @@
+body {
+    background-image: url(./pictures/ракушка.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+ 
+}
+
+.container {
+   
+    text-align: center;
+    color: #926239;
+}
+
+.main-button {
+    color: #926239;
+    border-radius: 5px;
+    border-color: #926239;
+    text-decoration: none; /*boarder ???*/   
+
+}
+
+.main-button:hover {
+    background-color: #926239;
+    color: white;
+    cursor: pointer;
+}
+
+.container1{
+    background-color: #926239;
+    position: relative;
+    margin-top: 300px;
+    /* font-size: 0; */
+}
+
+.container2 {
+    background-color: white;
+    position: relative;
+    margin-top: 15px;
+    /* font-size: 0; */
+
+}
+
+.container3{
+display: flex;
+margin-top: 20px;
+
+}
+
+.text-container{
+    background-color: #926239;
+
+}
+.text-container1{
+    background-color: white;
+}
+.text-container2{
+    background-color: #926239;
+}
