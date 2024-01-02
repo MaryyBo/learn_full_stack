@@ -1,11 +1,80 @@
-body {
-    background-image: url(./pictures/ракушка.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
- 
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  header {
+    display: flex;
+    align-items: center; /* щоб всі елементи, де картинка розташувались у центрі у вертикальному напрямку */
+    justify-content: center; /* щоб всі елементи, де картинка розташувались у центрі у горизонтальному напрямку */
+    background-image: url('./pictures/ракушка.jpg');
+    background-repeat: no-repeat; /* шоб картинка не повторювалась */
+    width: 100vw; /* розтягуємо картинку на всю ширину вьюпорта */
+    height: 100vh; /* розтягуємо картинку на всю висоту вьюпорта */
+    background-size: cover; /* щоб не втрачати пропорції картинки, не розтягувати її */
+    background-position: center; /* картинка розташовується по центру */
+  }
+
+ h1 {
+  font-size: 50px;
+  font-weight: bold;
 }
 
-.container {
+.header-text {
+  font-weight: normal;
+}
+
+h1, .header-text {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper {
+  /* щоб елементи в "картинці" (написи + кнопка) - розташовувались по центру */
+  display: flex;
+  color: #926239;
+  flex-direction: column;/*,без цього запис стоїть все в один рядок, а примінивши  column ми виставили його в 3 окремі речення зверху вниз*/
+  justify-content: center; /*щоб його елементи були вирівняні по центру горизонтально ( вирівнювання дочірніх елементів вздовж головної осі )*/
+  align-items: center; /*вирівнює по центру записи (вирівнювання дочірніх елементів вздовж поперечної осі )*/
+}
+
+.header-btn {
+  color: #926239;
+  border-color: #926239;
+  border-radius: 10px;
+  width: 150px; /*Задати розміри самій кнопці*/
+  height: 40px;
+  background: transparent; /*зробити його фон абсолютно прозорим.*/
+  font-size: 18px;
+  margin-top: 10px; /*відступ самої кнопки від тексту зверху.*/
+}
+.header-btn:hover {
+  background-color: #926239;
+  color: white;
+  cursor: pointer;
+}
+
+.main-content {
+  display: flex;/*по дефолту блоки в цій секції стоятимуть один біля одного в "строчку"*/
+  flex-direction: column; /*Щоб вони стояли НЕ в строчку а в колонку (один над одним, приміняємо цю властивість)*/
+  text-align: center; /*вирівнює текст по центру в данному блоці*/
+}
+
+.footer-content {
+  display: flex; /*по дефолту блоки в цій секції стоятимуть один біля одного в "строчку"*/
+  text-align: justify; 
+}
+
+  .bg-brown {
+    background-color: #926239;
+  }
+  
+  .p-20 {
+    padding: 20px;
+  }
+/* .container {
    
     text-align: center;
     color: #926239;
@@ -17,42 +86,10 @@ body {
     border-color: #926239;
     text-decoration: none; /*boarder ???*/   
 
-}
 
-.main-button:hover {
+/* .main-button:hover {
     background-color: #926239;
     color: white;
     cursor: pointer;
-}
+} */
 
-.container1{
-    background-color: #926239;
-    position: relative;
-    margin-top: 300px;
-    /* font-size: 0; */
-}
-
-.container2 {
-    background-color: white;
-    position: relative;
-    margin-top: 15px;
-    /* font-size: 0; */
-
-}
-
-.container3{
-display: flex;
-margin-top: 20px;
-
-}
-
-.text-container{
-    background-color: #926239;
-
-}
-.text-container1{
-    background-color: white;
-}
-.text-container2{
-    background-color: #926239;
-}
